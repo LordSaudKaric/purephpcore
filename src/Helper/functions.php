@@ -9,7 +9,7 @@ if (!function_exists('xxxx')) {
 */
 
 if (!function_exists('auth')) {
-    function auth(string $table,mixed $value, string $operator = '=', string $column ='id')
+    function auth(string $table, string $column ='id', string $operator = '=')
     {
         $auth = Lordsaudkaric\Purephp\Session\Session::get($table) ?:
             Lordsaudkaric\Purephp\Cookie\Cookie::get($table);
