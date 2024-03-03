@@ -28,9 +28,11 @@ class DbModel extends Database
         return self::table(static::$table)->get();
     }
 
-    public static function getOne()
+    public static function getOne(mixed $value, string $column = 'id', string $operator = '=')
     {
-        return self::table(static::$table)->first();
+        return self::table(static::$table)
+            ->where($column, $operator, $value)
+            ->first();
     }
 
 }
