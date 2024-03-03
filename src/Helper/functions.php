@@ -9,11 +9,14 @@ if (!function_exists('xxxx')) {
 */
 
 if (!function_exists('auth')) {
-    function auth(string $table)
+    function auth(string $table,mixed $value, string $operator = '=', string $column ='id')
     {
-        $auth = Lordsaudkaric\Purephp\Session\Session::get($table) ?: Lordsaudkaric\Purephp\Cookie\Cookie::get($table);
+        $auth = Lordsaudkaric\Purephp\Session\Session::get($table) ?:
+            Lordsaudkaric\Purephp\Cookie\Cookie::get($table);
 
-        return Lordsaudkaric\Purephp\Database\Database::table($table)->where('id', '=', $auth)->first();
+        return Lordsaudkaric\Purephp\Database\Database::table($table)
+            ->where($column, $operator, $auth)
+            ->first();
     }
 }
 
