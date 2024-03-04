@@ -253,9 +253,7 @@ class Database
 
         self::execute($data, $query);
 
-        $id = self::$connection->lastInsertId();
-
-        return self::table($table)->where('id', '=', $id)->first();
+        return self::$connection->lastInsertId();
     }
 
     public static function update(array $data)
