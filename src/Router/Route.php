@@ -87,7 +87,7 @@ class Route
                     }
                 }
 
-                if ($route['method'] !== $method) {
+                if ($route['method'] !== strtolower($method)) {
                     $matched = false;
                 }
 
