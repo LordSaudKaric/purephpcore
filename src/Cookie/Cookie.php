@@ -13,7 +13,7 @@ class Cookie
      * @param string $value
      * @return string
      */
-    public static function set(string $key, string $value): string
+    public static function set(string $key, $value)
     {
         setcookie($key, $value, strtotime('+30 days'), '/', '', false, true);
         return $value;
