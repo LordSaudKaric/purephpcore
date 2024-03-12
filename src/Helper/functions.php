@@ -9,6 +9,34 @@ if (!function_exists('xxxx')) {
 */
 
 
+if (!function_exists('isAdmin')) {
+    function isAdmin()
+    {
+        return (bool)((current_user()->role_id = 0 || current_user()->role_id = 1));
+    }
+}
+
+if (!function_exists('isModerator')) {
+    function isModerator()
+    {
+        return (bool)((current_user()->role_id = 2));
+    }
+}
+
+if (!function_exists('isEditor')) {
+    function isEditor()
+    {
+        return (bool)((current_user()->role_id = 3));
+    }
+}
+
+if (!function_exists('isUser')) {
+    function isUser()
+    {
+        return (bool)((current_user()->role_id = 4));
+    }
+}
+
 if (!function_exists('current_user')) {
     function current_user()
     {
