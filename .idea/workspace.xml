@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ece7266c-d245-4f4f-9fee-e22b6e571212" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Cookie/Cookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cookie/Cookie.php" afterDir="false" />
-    </list>
+    <list default="true" id="ece7266c-d245-4f4f-9fee-e22b6e571212" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -36,6 +34,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710167418585</updated>
       <workItem from="1710167419776" duration="12000" />
+      <workItem from="1710167623066" duration="9000" />
     </task>
     <servers />
   </component>

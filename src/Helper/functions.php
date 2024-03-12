@@ -8,6 +8,15 @@ if (!function_exists('xxxx')) {
 }
 */
 
+
+if (!function_exists('current_user')) {
+    function current_user()
+    {
+        $id = Lordsaudkaric\Purephp\Session\Session::get('current_user') ?: Lordsaudkaric\Purephp\Cookie\Cookie::get('current_user');
+        return App\Models\UserModel::getOne($id, 'user_id');
+    }
+}
+
 if (!function_exists('auth')) {
     function auth(string $table, string $column ='id', string $operator = '=')
     {
