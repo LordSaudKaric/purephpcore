@@ -9,31 +9,10 @@ if (!function_exists('xxxx')) {
 */
 
 
-if (!function_exists('isAdmin')) {
-    function isAdmin()
+if (!function_exists('userRole')) {
+    function userRole()
     {
-        return (current_user()->role_id = 0 || current_user()->role_id = 1) ? true : false;
-    }
-}
-
-if (!function_exists('isModerator')) {
-    function isModerator()
-    {
-        return (current_user()->role_id = 2) ? true : false;
-    }
-}
-
-if (!function_exists('isEditor')) {
-    function isEditor()
-    {
-        return (current_user()->role_id = 3) ? true : false;
-    }
-}
-
-if (!function_exists('isUser')) {
-    function isUser()
-    {
-        return (current_user()->role_id = 4) ? true : false;
+        return current_user()->role_id;
     }
 }
 
