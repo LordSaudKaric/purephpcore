@@ -8,6 +8,12 @@ if (!function_exists('xxxx')) {
 }
 */
 
+if (!function_exists('activePage')) {
+    function activePage()
+    {
+        return Lordsaudkaric\Purephp\Request\Request::url();
+    }
+}
 
 if (!function_exists('userRole')) {
     function userRole()
